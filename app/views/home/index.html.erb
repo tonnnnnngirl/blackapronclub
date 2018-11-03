@@ -1,0 +1,43 @@
+<div class="body">
+	<div class="header-logo"><div class="container"><h1>Coffee Quiz</h1></div></div>
+	<header></header>
+
+	<nav>
+		<div class="container">
+			<ul>
+				<li>SBのコーヒー豆</li>
+				<li>SBのコーヒー知識</li>
+				<li>コーヒー全般の知識</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="contents">
+		<div class="message-wrapper">
+			<div class="container">
+				<h2>Wanna change your apron into Black?</h2>
+				<h3>Let's go on Coffee Journey!</h3>
+			</div>
+		</div>
+
+		<div class="quiz-wrapper">
+			<div class="sbxbeans">
+				<%= link_to('問題を解く','/new') %>
+			</div>
+			<div class="knowledge">
+
+				<% @quizs.each do|quiz| %>
+
+					<p>
+						<%= quiz.name %>
+						<%= quiz.percent %>
+					</p>
+
+
+				<% end %>
+
+			</div>
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,55 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+/* layout */
+.container{
+	margin:0 auto;
+	padding-top:15px;
+	padding-left:35px;
+	width:90%;
+}
+
+
+.body{
+	display:grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 80px 600px 50px;
+	grid-template-areas:
+	"header-logo header"
+	"nav contents"
+	"footer footer";
+}
+
+.header-logo{
+	grid-area: header-logo;
+	background-color:rgb(0,70,59);
+	color:rgb(254,244,238);
+}
+
+
+header{
+	grid-area: header;
+	background-color:rgb(0,70,59);
+}
+
+nav{
+	grid-area: nav;
+	background-color:rgb(201,217,218);
+}
+
+.contents{
+	grid-area: contents;
+	background-color:rgb(254,244,238);
+}
+
+footer{
+	grid-area:footer;
+	background-color:rgb(0,70,59);
+}
