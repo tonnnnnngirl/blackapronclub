@@ -1,95 +1,697 @@
 <%= form_tag('/', method: :post) do %>
+  <div class="container">
 <h3>
 	投稿する
 </h3>
 
 <input placeholder="Nickname" type="text" name="name">
 <h4>スターバックス　ウィローブレンドについて、正しい組み合わせを選んで下さい</h4>
-<div class="question-con">
-	<p>1 風味のキーワードは？</p>
-	<div class="question-box">
-		<input type="radio" name="q01" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">Crisp（さわやかな）& Citrus（シトラス）</label><br>
-		<input type="radio" name="q01" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Clean（さっぱりした）& Citrus（シトラス）</label><br>
-		<input type="radio" name="q01" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Crisp（さわやかな）&　Clean (さっぱりした)</label><br>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q01" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Crisp（さわやかな）& Citrus（シトラス）</label><br>
+			<input type="radio" name="q01" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Clean（さっぱりした）& Citrus（シトラス）</label><br>
+			<input type="radio" name="q01" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Crisp（さわやかな）&　Clean (さっぱりした)</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>2 地域は？</p>
-	<div class="question-box">
-		<input type="radio" name="q02" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">ラテンアメリカ</label><br>
-		<input type="radio" name="q02" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">アフリカ</label><br>
-		<input type="radio" name="q02" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">マルチリージョン</label><br>
-
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q02" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q02" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q02" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>3 コクは？</p>
-	<div class="question-box">
-		<input type="radio" name="q03" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">Light</label><br>
-		<input type="radio" name="q03" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Medium</label><br>
-		<input type="radio" name="q03" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Full</label><br>
-
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q03" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q03" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q03" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>4 酸味は？</p>
-	<div class="question-box">
-		<input type="radio" name="q04" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Low</label><br>
-		<input type="radio" name="q04" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">Medium</label><br>
-		<input type="radio" name="q04" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">High</label><br>
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q04" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q04" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q04" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>5 加工法は？</p>
-	<div class="question-box">
-		<input type="radio" name="q05" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">水洗式（Washed）</label><br>
-		<input type="radio" name="q05" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">半水洗式 (Semi-washed)</label><br>
-		<input type="radio" name="q05" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q05" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q05" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q05" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>6 相性の良い風味は？</p>
-	<div class="question-box">
-		<input type="radio" name="q06" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">ナッツ、オレンジ</label><br>
-		<input type="radio" name="q06" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">シトラス、ナッツ</label><br>
-		<input type="radio" name="q06" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">レモン、オレンジ</label><br>
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q06" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ナッツ、オレンジ</label><br>
+			<input type="radio" name="q06" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">シトラス、ナッツ</label><br>
+			<input type="radio" name="q06" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">レモン、オレンジ</label><br>
+		</div>
 	</div>
-</div>
 
-<div class="question-con">
-	<p>7 パッケージデザインは？</p>
-	<div class="question-box">
-		<input type="radio" name="q07" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">ハチドリ</label><br>
-		<input type="radio" name="q07" class="q-item" value="0" id="qbox02">
-		<label for="qbox02">アフリカンベッド</label><br>
-		<input type="radio" name="q07" class="q-item" value="1" id="qbox02">
-		<label for="qbox02">柳の木</label><br>
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q07" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ハチドリ</label><br>
+			<input type="radio" name="q07" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカンベッド</label><br>
+			<input type="radio" name="q07" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">柳の木</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>スターバックス　ライトノートブレンドについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q08" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Soft（やわらかな）& Mellow（穏やかな）</label><br>
+			<input type="radio" name="q08" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Soft（やわらかな）& Citrus（シトラス）</label><br>
+			<input type="radio" name="q08" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Mellow（やわらかな）&　Clean (さっぱりした)</label><br>
+		</div>
 	</div>
-</div>
 
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q09" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q09" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q09" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q10" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q10" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q10" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q11" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q11" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q11" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q12" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q12" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q12" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q13" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ココア、炒ったナッツ</label><br>
+			<input type="radio" name="q13" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ミルクチョコレート、ピーカンナッツ</label><br>
+			<input type="radio" name="q13" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ミルクチョコレート、炒ったナッツ</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q14" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ハチドリ</label><br>
+			<input type="radio" name="q14" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ケツァール</label><br>
+			<input type="radio" name="q14" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">タンクィ</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>スターバックス　ブレックファーストブレンドについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q15" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Crisp（さわやかな）& Bright（鮮やかな）</label><br>
+			<input type="radio" name="q16" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Bright（鮮やかな）& Tangy（はじける）</label><br>
+			<input type="radio" name="q17" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Tangy（はじける）&　Clean (さっぱりした)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q16" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q16" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q16" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q17" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q17" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q17" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q18" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q18" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q18" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q19" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q19" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q19" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q20" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ナッツ、オレンジ、ココア、リンゴ</label><br>
+			<input type="radio" name="q20" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ココア、リンゴ、レモン、ブルーベリー</label><br>
+			<input type="radio" name="q20" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ブルーベリー、ナッツ、リンゴ、レモン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q21" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">太陽</label><br>
+			<input type="radio" name="q21" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">太陽の輝き</label><br>
+			<input type="radio" name="q21" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">日の出の太陽</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>ケニアについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q22" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Juicy（ジューシーな）& Intence（力強い）</label><br>
+			<input type="radio" name="q22" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Juicy（ジューシーな）& Citrus（シトラス）</label><br>
+			<input type="radio" name="q22" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Juicy（ジューシーな）&　Complex (複雑な)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q23" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q23" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q23" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q24" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q24" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q24" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q25" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q25" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q25" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q26" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q26" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q26" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q27" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">オレンジ、カラント（スグリ）、ベリー類</label><br>
+			<input type="radio" name="q27" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">グレープフルーツ、カラント（スグリ）、ベリー類</label><br>
+			<input type="radio" name="q27" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">グレープフルーツ、カラント（スグリ）、ブルーベリー</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q28" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">パオゾウ</label><br>
+			<input type="radio" name="q28" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ケニアゾウ</label><br>
+			<input type="radio" name="q28" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">アフリカゾウ</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>パイクプレイスローストについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q29" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Smooth（なめらかな）& Rich（豊かな）</label><br>
+			<input type="radio" name="q29" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Rich（豊かな）& Cocoa（ココア）</label><br>
+			<input type="radio" name="q29" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Smooth（なめらかな）&　Balanced (バランスのとれた)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q30" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q30" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q30" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q31" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q31" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q31" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q32" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q32" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q32" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q33" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q33" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q33" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q34" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ナッツ、チョコレート、カラメル</label><br>
+			<input type="radio" name="q34" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">チョコレート、キャラメル、シナモン</label><br>
+			<input type="radio" name="q34" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">チョコレート、シナモン、ナッツ</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q35" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">2011のロゴ</label><br>
+			<input type="radio" name="q35" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">スターバックス　パイクプレイス店</label><br>
+			<input type="radio" name="q35" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">シアトルのパイクプレイスマーケット</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>グアテマラ　アンティグアについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q36" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Dark Cocoa（ココア）& Soft Spice（わずかなスパイス感）</label><br>
+			<input type="radio" name="q36" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Cocoa（ココア）&  Subtle Spice（わずかなスパイス感）</label><br>
+			<input type="radio" name="q36" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Dark Cocoa（ココア）& Soft Spice（わずかなスパイス感）</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q37" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q37" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q37" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q38" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q38" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q38" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q39" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q39" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q39" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q40" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q40" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q40" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q41" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">チョコレート、ナッツ、リンゴ、キャラメル</label><br>
+			<input type="radio" name="q41" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ココア、ピーカンナッツ、リンゴ、カラメル</label><br>
+			<input type="radio" name="q41" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ココア、ナッツ、シトラス、カラメル</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q42" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ハチドリ</label><br>
+			<input type="radio" name="q42" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ケツァール</label><br>
+			<input type="radio" name="q42" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ココモ</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>エチオピアについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q43" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Citrus（シトラス）& Spice（スパイス）</label><br>
+			<input type="radio" name="q43" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Dark Cocoa（ダークココア）& Spice（スパイス）</label><br>
+			<input type="radio" name="q43" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Citrus（シトラス）&　Dark Cocoa（ダークココア）</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q44" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q44" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q44" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q45" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q45" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q45" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q46" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q46" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q46" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q47" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q47" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q47" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">乾燥式</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q48" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ミルクチョコレート、オールスパイス</label><br>
+			<input type="radio" name="q48" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">オールスパイス、スイートシトラス</label><br>
+			<input type="radio" name="q48" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ダークチョコレート、スイートシトラス</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q49" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ジャバナ</label><br>
+			<input type="radio" name="q49" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">カフワ</label><br>
+			<input type="radio" name="q49" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">カリオモン</label><br>
+		</div>
+  	</div>
+
+</div>
+<h4>ハウス　ブレンドについて、正しい組み合わせを選んで下さい</h4>
+	<div class="question-con">
+		<p>1 風味のキーワードは？</p>
+		<div class="question-box">
+			<input type="radio" name="q50" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Balanced（バランスの良い）&　Complex (複雑な)</label><br>
+			<input type="radio" name="q50" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Rich（豊かな）&Balanced（バランスの良い）</label><br>
+			<input type="radio" name="q50" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Rich（豊かな）&　Complex (複雑な)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>2 地域は？</p>
+		<div class="question-box">
+			<input type="radio" name="q51" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ラテンアメリカ</label><br>
+			<input type="radio" name="q51" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">アフリカ</label><br>
+			<input type="radio" name="q51" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">マルチリージョン</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>3 コクは？</p>
+		<div class="question-box">
+			<input type="radio" name="q52" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Light</label><br>
+			<input type="radio" name="q52" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q52" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Full</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>4 酸味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q53" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">Low</label><br>
+			<input type="radio" name="q53" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">Medium</label><br>
+			<input type="radio" name="q53" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">High</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>5 加工法は？</p>
+		<div class="question-box">
+			<input type="radio" name="q54" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">水洗式（Washed）</label><br>
+			<input type="radio" name="q54" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">半水洗式 (Semi-washed)</label><br>
+			<input type="radio" name="q54" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">水洗式（Washed）と 半水洗式 (Semi-washed)</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>6 相性の良い風味は？</p>
+		<div class="question-box">
+			<input type="radio" name="q55" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ブルーベリー、ナッツ、ココア</label><br>
+			<input type="radio" name="q55" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">ブルーベリー、リンゴ、レモン</label><br>
+			<input type="radio" name="q55" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">ブルーベリー、ナッツ、リンゴ</label><br>
+		</div>
+	</div>
+
+	<div class="question-con">
+		<p>7 パッケージデザインは？</p>
+		<div class="question-box">
+			<input type="radio" name="q56" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">スクープ</label><br>
+			<input type="radio" name="q56" class="q-item" value="0" id="qbox02">
+			<label for="qbox02">1971の文字と旧ロゴ</label><br>
+			<input type="radio" name="q56" class="q-item" value="1" id="qbox02">
+			<label for="qbox02">家</label><br>
+		</div>
+  	</div>
+
+</div>
 <input type="submit" value="回答する">
 <% end %>

@@ -1,8 +1,38 @@
+
+<div class="container">
+
 <% if @total == 7 %>
 <p>あなたは合格です</p>
+<%= link_to("次の問題に挑戦しましょう！","/") %>
 <% else %>
 <p>あなたは不合格です。残念</p>
+<p>以下の項目が間違っています、見直して再度挑戦しましょう。</p>
 <% end %>
 <p>あなたの点数は<span><%= @total %></span>点でした。<p>
 
 <%= link_to("もどる", "/") %>
+
+<% if params[:q01].to_i == 0 %>
+<span>風味のキーワード、</span>
+<% end %>
+<% if params[:q02].to_i == 0 %>
+<span>地域、</span>
+<% end %>
+<% if params[:q03].to_i == 0 %>
+<span>コク、</span>
+<% end %>
+<% if params[:q04].to_i == 0 %>
+<span>酸味、</span>
+<% end %>
+<% if params[:q05].to_i == 0 %>
+<span>加工法、</span>
+<% end %>
+<% if params[:q06].to_i == 0 %>
+<span>相性の良い風味、</span>
+<% end %>
+<% if params[:q07].to_i == 0 %>
+<span>パッケージデザイン</span>
+<% end %>
+
+	
+</div>
